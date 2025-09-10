@@ -7,7 +7,6 @@ using BepInEx.Configuration;
 namespace InteractionControl
 {
     [BepInPlugin(modGUID, modName, modVersion)]
-    [BepInDependency("com.rune580.LethalCompanyInputUtils", BepInDependency.DependencyFlags.HardDependency)]
     public class InteractionControlMod : BaseUnityPlugin
     {
         // Mod metadata
