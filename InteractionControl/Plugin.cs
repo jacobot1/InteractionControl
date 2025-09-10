@@ -12,7 +12,7 @@ namespace InteractionControl
         // Mod metadata
         public const string modGUID = "com.jacobot5.InteractionControl";
         public const string modName = "InteractionControl";
-        public const string modVersion = "1.0.0";
+        public const string modVersion = "1.1.0";
 
         // Initalize Harmony
         private readonly Harmony harmony = new Harmony(modGUID);
@@ -46,6 +46,7 @@ namespace InteractionControl
             // Do the patching
             harmony.PatchAll(typeof(InteractionControlMod));
             harmony.PatchAll(typeof(PlayerControllerBPatch));
+            harmony.PatchAll(typeof(KickIfModNotInstalled));
         }
     }
 }
